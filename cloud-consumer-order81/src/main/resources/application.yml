@@ -1,0 +1,13 @@
+#端口为80
+server:
+  port: 81
+  #本端口的名字
+spring:
+  application:
+    name: cloud-order-server
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
